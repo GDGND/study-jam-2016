@@ -3,24 +3,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.coupunz.fitlog.fitlog.MainActivity">
+    tools:context="com.coupunz.workoutkeeper.MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:orientation="horizontal">
-
-            <Button
+        <Button
                 style="@style/quick_add_focus_items"
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:id="@+id/btn_best_practices"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_height="100dp"
                 android:background="#FF8A80"
                 android:onClick="howToWorkoutGuideViewClicked"
                 android:text="@string/best_practise"
@@ -30,21 +24,14 @@
             <Button
                 android:id="@+id/btn_pushup"
                 style="@style/quick_add_focus_items"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
                 android:layout_weight="1"
                 android:background="#FF80AB"
                 android:onClick="pushupViewClicked"
                 android:text="@string/pushup"
                 android:textColor="#C51162" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:orientation="horizontal">
-
-            <Button
+        <Button
                 android:id="@+id/btn_pullup"
                 style="@style/quick_add_focus_items"
                 android:layout_width="0dp"
@@ -65,12 +52,6 @@
                 android:onClick="benchpressViewClicked"
                 android:text="@string/bench_press"
                 android:textColor="#33691E" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:orientation="horizontal">
 
             <Button
                 android:id="@+id/btn_crunches"
@@ -93,8 +74,6 @@
                 android:onClick="squatsViewClicked"
                 android:text="@string/squats"
                 android:textColor="#E65100" />
-        </LinearLayout>
-
 
         <TextView
             android:id="@+id/tv_credits"
