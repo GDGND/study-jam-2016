@@ -14,8 +14,6 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import org.w3c.dom.Text;
-
 /**
  * Created by shivam on 17/04/16.
  */
@@ -47,7 +45,7 @@ public class DisplayQuiz extends AppCompatActivity {
         op4.setText(dp.getOption4());
 
         TextView qtv = (TextView) findViewById(R.id.question_tv);
-        qtv.setText(dp.getQuestion());
+        qtv.setText(dp.getQues());
 
         TextView topic = (TextView) findViewById(R.id.topic_top);
         final String qcat = dp.getCategory();
@@ -124,7 +122,7 @@ public class DisplayQuiz extends AppCompatActivity {
                 }
                 else{
                 RadioButton chosen = (RadioButton) findViewById(selectedId);
-                if (chosen.getText().equals(dp.getAnswer())) {
+                if (chosen.getText().equals(dp.getAns())) {
                     chosen.setBackgroundColor(getResources().getColor(R.color.correct_ans));
                     chosen.setTextColor(getResources().getColor(R.color.icons));
                     globalValues.update(true,cati);
@@ -132,16 +130,16 @@ public class DisplayQuiz extends AppCompatActivity {
                 }
                 else{
                     int ans_rb_id=0;
-                    if(op1.getText().equals(dp.getAnswer())){
+                    if(op1.getText().equals(dp.getAns())){
                         ans_rb_id=op1.getId();
                     }
-                    else if (op2.getText().equals(dp.getAnswer())){
+                    else if (op2.getText().equals(dp.getAns())){
                         ans_rb_id=op2.getId();
                     }
-                    else if (op3.getText().equals(dp.getAnswer())){
+                    else if (op3.getText().equals(dp.getAns())){
                         ans_rb_id=op3.getId();
                     }
-                    else if (op4.getText().equals(dp.getAnswer())){
+                    else if (op4.getText().equals(dp.getAns())){
                         ans_rb_id=op4.getId();
                     }
                     try{

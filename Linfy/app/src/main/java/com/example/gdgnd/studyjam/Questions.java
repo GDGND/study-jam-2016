@@ -49,10 +49,10 @@ public class Questions implements Parcelable {
     public int getQid() {
         return qid;
     }
-    public String getQuestion() {
+    public String getQues() {
         return ques;
     }
-    public String getAnswer() {
+    public String getAns() {
         return ans;
     }
     public String getOption1() {

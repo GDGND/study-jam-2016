@@ -124,9 +124,9 @@ public class QuizActivity extends AppCompatActivity {
 
                         if (useLoop(selsubs, qt.getCategory())) {
                             questionsList.add(qt);
-                            System.out.println("Question: " + qt.getQuestion());
+                            System.out.println("Question: " + qt.getQues());
                             System.out.println("Options: " + qt.getOption1() + ", " + qt.getOption2() + ", " + qt.getOption3() + ", " + qt.getOption4());
-                            System.out.println("Answer: " + qt.getAnswer());
+                            System.out.println("Answer: " + qt.getAns());
                             System.out.println("Category: " + qt.getCategory());
                         }
                     }
