@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tripti.bodyfact.Screen2Activity"
+    android:background="#0080ff">
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollView4"
+    android:layout_gravity="center_horizontal"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/BodyMassIndex"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bm1"
+            android:visibility="gone"
+            android:id="@+id/bm1"
+            android:layout_gravity="center_horizontal" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bm2"
+            android:id="@+id/bm2"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bm3"
+            android:id="@+id/bm3"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bm4"
+            android:id="@+id/bm4"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20sp"
+            android:text="hello"
+            android:visibility="gone"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:id="@+id/bmi_text"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="22sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:text="RESET"
+            android:background="#0080ff"
+            android:id="@+id/reset_button"/>
+
+
+
+    </LinearLayout>
+</ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tripti.bodyfact.Screen2Activity"
+    android:background="#0080ff">
+    <ImageView
+        android:id="@+id/BodyMassIndex"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src = "@drawable/body"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="40dp"
+        android:textSize="20sp"
+        android:id="@+id/intro1"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:text="The Body mass Index (BMI) or Quetelet index is a value derived from the mass and height of an indivisual \n "
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="BMI = Weight/Height^2"
+        android:textColor="#000000"
+        android:id="@+id/intro2"
+        android:layout_below="@+id/intro1"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Got it!"
+        android:padding="20dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:background="#0080ff"
+        android:id="@+id/got_it_button"/>
+
+
+
+</RelativeLayout>

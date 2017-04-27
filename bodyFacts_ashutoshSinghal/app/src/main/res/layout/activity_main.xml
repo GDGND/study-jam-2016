@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#0080ff">
+
+    //SCREEN 1 . STARTS here
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src = "@drawable/icon1"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/beg"
+        android:visibility="visible"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="BodyFact"
+        android:id="@+id/introtext"
+        android:paddingTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:visibility="visible"
+        android:textSize="50sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:visibility="visible"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:id="@+id/introtext2"
+        android:text="Developed By : Macinashutosh"
+        android:padding="20dp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

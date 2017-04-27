@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tripti.bodyfact.Screen2Activity"
+    android:background="#0080ff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linearLayout"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/editText1"
+                android:hint=" Height"
+                android:textColor="#000000"
+                android:layout_marginTop="50dp"
+                android:layout_weight="1"
+                android:inputType="numberDecimal" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:textSize="22sp"
+                android:id="@+id/cms_view"
+                android:textColor="#000000"
+                android:layout_marginTop="50dp"
+                android:textStyle="bold"
+                android:text="cms."/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_marginTop="30dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:id="@+id/editText2"
+                android:textColor="#000000"
+                android:inputType="numberDecimal"
+                android:layout_weight="1"
+                android:hint="Weight"
+                android:layout_marginLeft="17dp"
+                android:layout_below="@+id/linearLayout"
+                android:layout_toRightOf="@+id/radio"
+                android:layout_toEndOf="@+id/radio" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:id="@+id/kgs"
+                android:textSize="22sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="Kgs."
+                android:layout_alignBottom="@+id/editText2"
+                android:layout_alignRight="@+id/editText2"
+                android:layout_alignEnd="@+id/editText2" />
+
+        </LinearLayout>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/radio">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender :"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="30dp"
+                android:textStyle="bold"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/male_radio"
+                android:textSize="22sp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="120dp"
+                android:text="Male"
+                android:textColor="#000000"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/female_radio"
+                android:textSize="22sp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="120dp"
+                android:text="Female"
+                android:textColor="#000000"/>
+
+        </RadioGroup>
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#000000"
+        android:text="SUBMIT"
+        android:padding="20dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="#0080ff"
+        android:id="@+id/submit_button"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>
